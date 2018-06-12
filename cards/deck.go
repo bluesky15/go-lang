@@ -6,6 +6,7 @@ import "fmt"
 // which is a slice of strings
 type deck []string
 
+// Receiver function
 func (d deck) print() {
 	for i, card := range d {
 		fmt.Println(i, card)
