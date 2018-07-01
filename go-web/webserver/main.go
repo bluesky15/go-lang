@@ -28,7 +28,7 @@ func about(w http.ResponseWriter, r *http.Request) {
 	}
 	cd := customData{
 		Title:   "The Team",
-		Members: []string{"moneypenny", "bond", "M", "Q"},
+		Members: []string{"moneypenny", "bond", "M", "Q", "007"},
 	}
-	tpl.ExecuteTemplate(w, "index.gohtml", cd)
+	tpl.ExecuteTemplate(w, "about.gohtml", cd)
 }
